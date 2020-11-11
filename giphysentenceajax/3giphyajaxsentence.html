@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Internet Niche</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <LINK href="style.css" rel="stylesheet" type="text/css">
+     
+      
+</head>
+
+<body>
+  <div class="container1">
+    <div class="row justify-content-center">
+      <p>hi!</p>
+      <div class="col-sm-9">
+   
+
+</div>
+</div>
+</div>
+
+
+
+<div class="container3">
+  <div class="row justify-content-center" >
+  
+    <div class="col-md-2 "  id="images" >
+      <p>one</p>
+  </div>
+  <div class="col-sm-2 " id="imagestwo">
+    <p>two</p>
+  </div>
+
+  <div class="col-sm-2 " id="imagesthree">
+   <p>three</p>
+  </div>
+
+  <div class="col-sm-2 " id="imagesfour">
+    <p>four</p>
+  </div>
+</div>
+  <div class="row justify-content-center" >
+
+  <div class="col-sm-2 " id="imagesfive">
+    <p>five</p>
+  </div>
+  <div class="col-sm-2 " id="imagessix">
+   <p>six</p>
+  </div>
+  <div class="col-sm-2 " id="imagesseven">
+    <p>seven</p>
+  </div>
+  <div class="col-sm-2 " id="imageseight">
+   <p>eight</p>
+  </div>
+
+
+
+</div>
+</div>
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript">
+  
+
+        $( window ).on( "load", function() {
+  
+      //Zpf6H2wI6BHIzUiv6hoqUNqeIsoVVKA4
+      //dc6zaTOxFJmzC
+      var queryURL = "https://api.giphy.com/v1/gifs/random?api_key=Zpf6H2wI6BHIzUiv6hoqUNqeIsoVVKA4&tag=zoanthropy";
+      var queryURLtwo = "https://api.giphy.com/v1/gifs/random?api_key=Zpf6H2wI6BHIzUiv6hoqUNqeIsoVVKA4&tag=erinaceous";
+      var queryURLthree = "https://api.giphy.com/v1/gifs/random?api_key=Zpf6H2wI6BHIzUiv6hoqUNqeIsoVVKA4&tag=jentacular";
+      var queryURLfour = "https://api.giphy.com/v1/gifs/random?api_key=Zpf6H2wI6BHIzUiv6hoqUNqeIsoVVKA4&tag=macrosmatic";
+      var queryURLfive = "https://api.giphy.com/v1/gifs/random?api_key=Zpf6H2wI6BHIzUiv6hoqUNqeIsoVVKA4&tag=pauciloquent";
+      var queryURLsix = "https://api.giphy.com/v1/gifs/random?api_key=Zpf6H2wI6BHIzUiv6hoqUNqeIsoVVKA4&tag=ulotrichous";
+      var queryURLseven = "https://api.giphy.com/v1/gifs/random?api_key=Zpf6H2wI6BHIzUiv6hoqUNqeIsoVVKA4&tag=valetudinarian";
+      var queryURLeight = "https://api.giphy.com/v1/gifs/random?api_key=Zpf6H2wI6BHIzUiv6hoqUNqeIsoVVKA4&tag=xertz";
+      event.preventDefault();
+          clear();
+    
+      $.ajax({
+        url: queryURL,
+        method: "GET"
+      })
+
+      
+
+      // After the data from the AJAX request comes back
+        .then(function(response) {
+
+         
+
+        // Saving the image_original_url property
+          var imageUrl = response.data.image_original_url;
+
+          // Creating and storing an image tag
+          var oneImage = $("<img>");
+          
+
+          // Setting the neingagImage src attribute to imageUrl
+          oneImage.attr("src", imageUrl);
+          oneImage.attr("alt", "one");
+
+       
+
+          // Prepending the neingagImage to the images div
+          $("#images").prepend(oneImage);
+          
+          
+         
+        });
+    
+
+    //other code
+    $.ajax({
+       
+        url: queryURLtwo,
+        method: "GET"
+      })
+
+      
+
+      // After the data from the AJAX request comes back
+        .then(function(response) {
+
+        // Saving the image_original_url property
+          var imageUrl = response.data.image_original_url;
+
+          // Creating and storing an image tag
+         
+          var tumblrImage = $("<img>");
+
+          // Setting the neingagImage src attribute to imageUrl
+         
+
+          tumblrImage.attr("src", imageUrl);
+          tumblrImage.attr("alt", "tumblr");
+
+          // Prepending the neingagImage to the images div
+          $("#imagestwo").prepend(tumblrImage);
+          //$("#images").prepend(chanImage);
+        });
+
+        //other code
+    $.ajax({
+       
+       url: queryURLthree,
+       method: "GET"
+     })
+
+     
+
+     // After the data from the AJAX request comes back
+       .then(function(response) {
+
+       // Saving the image_original_url property
+         var imageUrl = response.data.image_original_url;
+
+         // Creating and storing an image tag
+        
+         var gagImage = $("<img>");
+
+         // Setting the neingagImage src attribute to imageUrl
+        
+
+         gagImage.attr("src", imageUrl);
+         gagImage.attr("alt", "blingee");
+
+         // Prepending the neingagImage to the images div
+         $("#imagesthree").prepend(gagImage);
+         //$("#images").prepend(chanImage);
+       });
+
+        $.ajax({
+        url: queryURLfour,
+        method: "GET"
+      })
+
+      
+
+      // After the data from the AJAX request comes back
+        .then(function(response) {
+
+         
+
+        // Saving the image_original_url property
+          var imageUrl = response.data.image_original_url;
+
+          // Creating and storing an image tag
+          var fourImage = $("<img>");
+          
+
+          // Setting the neingagImage src attribute to imageUrl
+          fourImage.attr("src", imageUrl);
+          fourImage.attr("alt", "four");
+
+       
+
+          // Prepending the neingagImage to the images div
+          $("#imagesfour").prepend(fourImage);
+          
+         
+        });
+
+        $.ajax({
+        url: queryURLfive,
+        method: "GET"
+      })
+
+      
+
+      // After the data from the AJAX request comes back
+        .then(function(response) {
+
+         
+
+        // Saving the image_original_url property
+          var imageUrl = response.data.image_original_url;
+
+          // Creating and storing an image tag
+          var fourImage = $("<img>");
+          
+
+          // Setting the neingagImage src attribute to imageUrl
+          fourImage.attr("src", imageUrl);
+          fourImage.attr("alt", "four");
+
+       
+
+          // Prepending the neingagImage to the images div
+          $("#imagesfive").prepend(fourImage);
+          
+         
+        });
+
+        $.ajax({
+        url: queryURLsix,
+        method: "GET"
+      })
+
+      
+
+      // After the data from the AJAX request comes back
+        .then(function(response) {
+
+         
+
+        // Saving the image_original_url property
+          var imageUrl = response.data.image_original_url;
+
+          // Creating and storing an image tag
+          var fourImage = $("<img>");
+          
+
+          // Setting the neingagImage src attribute to imageUrl
+          fourImage.attr("src", imageUrl);
+          fourImage.attr("alt", "four");
+
+       
+
+          // Prepending the neingagImage to the images div
+          $("#imagessix").prepend(fourImage);
+          
+         
+        });
+
+        $.ajax({
+        url: queryURLseven,
+        method: "GET"
+      })
+
+      
+
+      // After the data from the AJAX request comes back
+        .then(function(response) {
+
+         
+
+        // Saving the image_original_url property
+          var imageUrl = response.data.image_original_url;
+
+          // Creating and storing an image tag
+          var fourImage = $("<img>");
+          
+
+          // Setting the neingagImage src attribute to imageUrl
+          fourImage.attr("src", imageUrl);
+          fourImage.attr("alt", "four");
+
+       
+
+          // Prepending the neingagImage to the images div
+          $("#imagesseven").prepend(fourImage);
+          
+         
+        });
+
+        $.ajax({
+        url: queryURLeight,
+        method: "GET"
+      })
+
+      
+
+      // After the data from the AJAX request comes back
+        .then(function(response) {
+
+         
+
+        // Saving the image_original_url property
+          var imageUrl = response.data.image_original_url;
+
+          // Creating and storing an image tag
+          var fourImage = $("<img>");
+          
+
+          // Setting the neingagImage src attribute to imageUrl
+          fourImage.attr("src", imageUrl);
+          fourImage.attr("alt", "four");
+
+       
+
+          // Prepending the neingagImage to the images div
+          $("#imageseight").prepend(fourImage);
+          
+         
+        });
+
+          
+
+
+
+
+        function clear() {
+                    $("#images").empty();
+                    $("#imagestwo").empty();
+                    $("#imagesthree").empty();
+                    $("#imagesfour").empty();
+                  
+                }
+
+        
+    });
+
+   
+
+  
+
+
+    
+  </script>
+</body>
+
+</html>

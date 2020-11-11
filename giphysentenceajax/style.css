@@ -1,0 +1,110 @@
+body {
+   
+    background: #3c3c3d;
+    text-align: center;
+    max-width: 1920px;
+    display: inline;
+   
+    font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    
+  }
+  
+
+
+  .container3 {
+ 
+    padding-top: 15%;
+    align-items: center;
+    max-width: 1175px;
+   
+
+    
+  
+  }
+  
+
+#images {
+  background: rgb(125, 75, 75);
+  height: 200px;
+
+}
+#imagestwo {
+  background: rgb(79, 125, 75);
+  height: 200px;
+}
+#imagesthree {
+  background: rgb(75, 75, 125);
+  height: 200px;
+}
+#imagesfour {
+  background: rgb(115, 75, 125);
+  height: 200px;
+
+}
+#imagesfive {
+  background: rgb(125, 75, 96);
+  height: 200px;
+ 
+}
+#imagessix {
+  background: rgb(125, 120, 75);
+  height: 200px;
+
+}
+#imagesseven{
+  background: rgb(75, 125, 120);
+  height: 200px;
+
+}
+#imageseight{
+  background: rgb(117, 95, 103);
+  height: 200px;
+
+}
+
+
+ 
+  .container1 {
+    background: rgb(114, 114, 114);
+   
+  }
+
+  .container2 {
+ 
+    padding-top: 10px;
+   
+    font-size: 40px;
+    text-shadow: 3px 2px rgb(207, 197, 197);
+  }
+
+ 
+
+ 
+
+
+
+  h1 {
+    padding: 20px 0;
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #eee;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 18px;
+    line-height: 150%;
+    color: #333;
+    height: 512px;
+    
+    color: rgb(255, 255, 255);
+    text-align: center;
+    color: rgb(201, 86, 86);
+    align-content: center;
+  }
+  
+
+
+
+ 
